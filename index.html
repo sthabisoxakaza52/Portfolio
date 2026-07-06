@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sthabiso Xakaza — a Cape Town-based software engineering student who's genuinely excited about cloud infrastructure, AWS, and DevOps.">
+    <meta name="keywords" content="Cloud Engineer, DevOps, AWS, Software Engineer, Cape Town, WeThinkCode">
+    <meta name="author" content="Sthabiso Xakaza">
+    <title>Sthabiso Xakaza | Cloud & Software Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><span class="logo-text">Sthabiso</span></div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Sthabiso</h1>
+                <p class="hero-subtitle">Software Engineer & Cloud Enthusiast</p>
+                <p class="hero-description">I'm learning to build the systems that keep applications running smoothly behind the scenes.</p>
+                <div class="typing-animation">
+                    <span class="typing-text">Cloud Engineering</span>
+                    <span class="cursor"></span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/sthabisoxakaza52" target="_blank" class="social-link" title="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sthabiso-xakaza/" target="_blank" class="social-link" title="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:sthabisoxakaza52@gmail.com" class="social-link" title="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6L12 13 2 6"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </section>
+
+        <section id="profile" class="profile">
+            <div class="profile-card">
+                <div class="profile-image-wrapper">
+                    <img src="images/profile.jpg" alt="Sthabiso Xakaza" class="profile-image" onerror="this.src='https://via.placeholder.com/200?text=SX'">
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Sthabiso Xakaza</h2>
+                    <p class="profile-title">Software Engineering Student</p>
+                    <p class="profile-location">📍 Cape Town, South Africa</p>
+                    <p class="profile-status">💼 Open to internship opportunities</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm currently studying Software Engineering at WeThinkCode in Cape Town. While most of my classmates gravitate toward front-end or full-stack work, I find myself more curious about what happens <em>after</em> you hit deploy.</p>
+                        <p>That's where my interest in cloud engineering comes in. I love thinking about how infrastructure scales, stays secure, and supports applications in production. My focus areas include:</p>
+                        <ul class="about-list">
+                            <li>Designing reliable cloud infrastructure</li>
+                            <li>Security best practices and IAM</li>
+                            <li>Monitoring and observability</li>
+                            <li>Automation with IaC tools</li>
+                            <li>Building for scalability from the start</li>
+                        </ul>
+                        <p>Right now I'm actively learning AWS, Azure, Linux, Terraform, Docker, and DevOps workflows. I build projects to reinforce concepts — not just to complete tutorials, but to really understand <em>why</em> things work the way they do.</p>
+                    </div>
+                    <div class="why-cloud">
+                        <h3>Why Cloud?</h3>
+                        <p>Honestly, I got hooked after my first AWS course. I realized that cloud infrastructure isn't just about hosting websites — it's about architecting systems that are resilient, efficient, and secure. That's what excites me.</p>
+                        <p>My long-term goal is to become a Cloud Engineer or DevOps Engineer, working on infrastructure that supports real users at scale. I'm not just chasing certifications; I want to genuinely understand the craft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="journey">
+            <div class="container">
+                <h2 class="section-title">My Learning Path</h2>
+                <div class="timeline">
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Started at WeThinkCode</h3><p>Began my software engineering journey</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Python Fundamentals</h3><p>Built core programming skills and first projects</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Java & Object-Oriented Programming</h3><p>Deep dive into OOP principles and testing</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>AWS Cloud Computing 101</h3><p>Completed my first cloud course — got hooked immediately</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Built AWS Cost Alert System</h3><p>Automated AWS spending tracking with Python and SNS</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Expanding Into Azure & DevOps</h3><p>Learning Azure, Docker, Terraform, and CI/CD practices</p></div></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Pursuing Cloud Opportunities</h3><p>Building real-world projects and seeking internships</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Core Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span><span class="skill-tag">EC2</span><span class="skill-tag">S3</span><span class="skill-tag">IAM</span><span class="skill-tag">SNS</span><span class="skill-tag">CloudWatch</span><span class="skill-tag">Azure</span><span class="skill-tag">Docker</span><span class="skill-tag">Terraform</span><span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Security Awareness</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Authentication</span><span class="skill-tag">Authorization</span><span class="skill-tag">IAM Policies</span><span class="skill-tag">XSS Prevention</span><span class="skill-tag">CSRF Protection</span><span class="skill-tag">Secure Coding</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Maven</span><span class="skill-tag">JUnit</span><span class="skill-tag">Boto3</span><span class="skill-tag">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="skills-note">This is a snapshot — for the complete picture, check out my <a href="https://www.linkedin.com/in/sthabiso-xakaza/" target="_blank">LinkedIn profile</a>.</p>
+            </div>
+        </section>
+
+        <section id="learning" class="learning">
+            <div class="container">
+                <h2 class="section-title">Currently Learning</h2>
+                <div class="learning-grid">
+                    <div class="learning-card"><h3>Terraform</h3><div class="progress-bar"><div class="progress-fill" style="width:60%"></div></div><p class="progress-text">In Progress</p></div>
+                    <div class="learning-card"><h3>Docker</h3><div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div><p class="progress-text">In Progress</p></div>
+                    <div class="learning-card"><h3>Azure Fundamentals</h3><div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div><p class="progress-text">In Progress</p></div>
+                    <div class="learning-card"><h3>SQL</h3><div class="progress-bar"><div class="progress-fill" style="width:55%"></div></div><p class="progress-text">In Progress</p></div>
+                    <div class="learning-card"><h3>CI/CD</h3><div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div><p class="progress-text">In Progress</p></div>
+                    <div class="learning-card"><h3>Cloud Security</h3><div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div><p class="progress-text">In Progress</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header"><h3>AWS Cost Alert System</h3><span class="project-type">Cloud Automation</span></div>
+                        <p class="project-description">I built this Python tool to monitor my AWS spending and send alerts when costs hit thresholds. It uses Boto3 to interact with CloudWatch and SNS — a practical way to avoid surprise bills and learn cost management.</p>
+                        <div class="project-tech"><span class="tech-tag">AWS</span><span class="tech-tag">Python</span><span class="tech-tag">Boto3</span><span class="tech-tag">SNS</span><span class="tech-tag">CloudWatch</span></div>
+                        <div class="project-links"><a href="#" class="project-link">View Project</a><a href="https://github.com/sthabisoxakaza52" class="project-link">GitHub</a></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-header"><h3>Healing Botanicals</h3><span class="project-type">Web Security</span></div>
+                        <p class="project-description">An e-commerce site where I focused heavily on security. Includes OAuth authentication, input sanitization, and rate limiting concepts. I wanted to practice building something that treats user data with care.</p>
+                        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Supabase</span><span class="tech-tag">Security</span></div>
+                        <div class="project-links"><a href="#" class="project-link">View Project</a><a href="https://github.com/sthabisoxakaza52" class="project-link">GitHub</a></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-header"><h3>Vault Cracker</h3><span class="project-type">Game Development</span></div>
+                        <p class="project-description">A Java game built to demonstrate OOP principles. Managed with Maven and tested with JUnit — solid practice for clean, testable code architecture.</p>
+                        <div class="project-tech"><span class="tech-tag">Java</span><span class="tech-tag">OOP</span><span class="tech-tag">Maven</span><span class="tech-tag">JUnit</span></div>
+                        <div class="project-links"><a href="#" class="project-link">View Project</a><a href="https://github.com/sthabisoxakaza52" class="project-link">GitHub</a></div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-header"><h3>Python Number Guessing Game</h3><span class="project-type">Learning Project</span></div>
+                        <p class="project-description">One of my first projects — a simple CLI game that helped me get comfortable with loops, conditionals, and user input in Python.</p>
+                        <div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">CLI</span><span class="tech-tag">Git</span></div>
+                        <div class="project-links"><a href="#" class="project-link">View Project</a><a href="https://github.com/sthabisoxakaza52" class="project-link">GitHub</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="cert-columns">
+                    <div class="cert-column">
+                        <h3>✓ Completed</h3>
+                        <ul class="cert-list">
+                            <li>AWS Cloud Computing 101</li>
+                            <li>Docker Level 1</li>
+                            <li>WeThinkCode Generative AI</li>
+                            <li>Java Programming (with Imtiaz)</li>
+                        </ul>
+                    </div>
+                    <div class="cert-column">
+                        <h3>⏳ In Progress</h3>
+                        <ul class="cert-list">
+                            <li>AWS Cloud Practitioner</li>
+                            <li>Azure Fundamentals AZ-900</li>
+                            <li>KodeKloud DevOps Path</li>
+                        </ul>
+                    </div>
+                    <div class="cert-column">
+                        <h3>📋 Planned</h3>
+                        <ul class="cert-list">
+                            <li>Terraform Associate</li>
+                            <li>AWS Solutions Architect</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community">
+            <div class="container">
+                <h2 class="section-title">Beyond the Code</h2>
+                <div class="community-items">
+                    <div class="community-card"><h3>👩‍💼 WomenThinkCode</h3><p>I'm involved in creating a more inclusive environment for women in tech at WeThinkCode. Representation matters.</p></div>
+                    <div class="community-card"><h3>🤝 Social Wellness Committee</h3><p>Helping keep the student community connected and supported — campus culture is something I care about.</p></div>
+                    <div class="community-card"><h3>💝 Siyanakekela Drop-In Centre</h3><p>Volunteering here keeps me grounded. It's a reminder that tech skills can and should serve the broader community.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-me" class="why-me">
+            <div class="container">
+                <h2 class="section-title">What I Bring to the Table</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item"><div class="highlight-icon">⚡</div><h3>I Learn Fast</h3><p>I pick up new tools and concepts quickly, and I'm comfortable being in a room where I'm the least experienced person</p></div>
+                    <div class="highlight-item"><div class="highlight-icon">☁️</div><h3>Cloud-First Thinking</h3><p>I think about infrastructure, not just code — how does this scale? What happens when it fails? How do we keep costs in check?</p></div>
+                    <div class="highlight-item"><div class="highlight-icon">🔒</div><h3>Security-Conscious</h3><p>I don't treat security as an afterthought. It's part of how I think when building anything, even side projects</p></div>
+                    <div class="highlight-item"><div class="highlight-icon">🛠️</div><h3>I Actually Build Things</h3><p>My projects aren't just tutorials I followed — they're problems I identified and solved with real tools</p></div>
+                    <div class="highlight-item"><div class="highlight-icon">🧠</div><h3>Systematic Problem-Solver</h3><p>I break problems down methodically before writing any code. Debugging is a process, not a guessing game</p></div>
+                    <div class="highlight-item"><div class="highlight-icon">🤗</div><h3>Collaborative by Nature</h3><p>I thrive in team environments. Contributing to student committees and communities has shaped how I work with others</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>Whether you're looking for an intern, want to collaborate on a project, or just want to talk cloud — I'm always up for a conversation. Drop me a message.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>Email</h3>
+                            <p><a href="mailto:sthabisoxakaza52@gmail.com">sthabisoxakaza52@gmail.com</a></p>
+                            <button class="btn-copy" onclick="copyEmail()">Copy Email</button>
+                        </div>
+                        <div class="contact-method">
+                            <h3>Social</h3>
+                            <div class="contact-links">
+                                <a href="https://github.com/sthabisoxakaza52" target="_blank" class="contact-link">GitHub</a>
+                                <a href="https://www.linkedin.com/in/sthabiso-xakaza/" target="_blank" class="contact-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm" class="form">
+                            <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
+                            <div class="form-group"><input type="email" id="email" placeholder="Your Email" required></div>
+                            <div class="form-group"><textarea id="message" placeholder="Your Message" rows="5" required></textarea></div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="formMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sthabiso Xakaza. Hand-crafted with HTML, CSS, and JavaScript.</p>
+            <p>Currently open to internships and entry-level cloud engineering opportunities.</p>
+            <a href="#home" class="back-to-top" id="backToTop">↑ Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
