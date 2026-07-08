@@ -76,7 +76,7 @@ function copyEmail() {
         const btn = event.target;
         const orig = btn.textContent;
         btn.textContent = 'Copied!';
-        btn.style.cssText = 'background:rgba(123,177,129,0.2);color:#7bb181';
+        btn.style.cssText = 'background: color-mix(in srgb, var(--success) 15%, transparent); color: var(--success); border-color: color-mix(in srgb, var(--success) 30%, transparent);';
         setTimeout(() => { btn.textContent = orig; btn.style.cssText = ''; }, 2000);
     }).catch(() => alert('Failed to copy email'));
 }
