@@ -1,0 +1,223 @@
+/* ==========================================================================
+   Selected Work / Projects Section Styles - Tech-Tailored & Framer Layout
+   ========================================================================== */
+
+.section-projects {
+  background-color: #595357;
+  padding: 7.5rem 0;
+}
+
+/* Filter Bar */
+.projects-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.35rem;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--duration-fast);
+}
+
+.filter-pill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}
+
+.filter-pill.active {
+  background: #ffffff;
+  color: #1a1a1d;
+  font-weight: 700;
+  border-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* 3x2 Grid */
+.projects-poster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.85rem;
+}
+
+@media (max-width: 1024px) {
+  .projects-poster-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-poster-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Vertical Poster Card */
+.project-poster-card {
+  position: relative;
+  height: 520px;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem 1.85rem 2.25rem;
+  cursor: pointer;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  transition: transform var(--duration-norm) var(--ease-spring), box-shadow var(--duration-fast);
+}
+
+.project-poster-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.5);
+}
+
+/* Gradients matching projects.png */
+.card-theme-cloud {
+  background: radial-gradient(circle at 50% 30%, #ff4b1f 0%, #ff9068 30%, #2b1108 75%, #150904 100%);
+}
+
+.card-theme-java {
+  background: radial-gradient(circle at 50% 40%, #e2dcd5 0%, #a89f91 35%, #595349 70%, #2e2a25 100%);
+}
+
+.card-theme-web {
+  background: radial-gradient(circle at 50% 35%, #ffffff 0%, #cbd5e1 25%, #334155 60%, #0f172a 100%);
+}
+
+.card-theme-oop {
+  background: radial-gradient(circle at 50% 40%, #22d3ee 0%, #0891b2 35%, #155e75 65%, #082f49 100%);
+}
+
+.card-theme-python {
+  background: radial-gradient(circle at 50% 30%, #fb7185 0%, #e11d48 35%, #9f1239 65%, #4c0519 100%);
+}
+
+.card-theme-devops {
+  background: radial-gradient(circle at 60% 25%, #f59e0b 0%, #d946ef 35%, #7e22ce 65%, #3b0764 100%);
+}
+
+/* Center Rectangular Framed Canvas Box */
+.project-center-frame {
+  position: absolute;
+  top: 18%;
+  left: 12%;
+  right: 12%;
+  bottom: 24%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(10, 10, 15, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: transform 0.4s var(--ease-spring), border-color 0.3s;
+}
+
+.project-poster-card:hover .project-center-frame {
+  transform: scale(1.03);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Technical Inner Art Visuals */
+.tech-canvas-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.tech-icon-svg {
+  width: 52px;
+  height: 52px;
+  color: #ffffff;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6));
+  margin-bottom: 0.6rem;
+}
+
+.tech-badge-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Top Meta Row */
+.project-card-top {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.project-motif-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+.project-category-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+/* Bottom Bold Centered Headline */
+.project-card-bottom {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.project-main-headline {
+  font-family: var(--font-brand);
+  font-size: clamp(1.6rem, 5.5vw, 2.15rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 640px) {
+  .projects-filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter-pill {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .project-poster-card {
+    height: 480px;
+    padding: 1.5rem 1.25rem 1.85rem;
+  }
+}

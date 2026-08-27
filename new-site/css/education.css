@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Education & Awards & Languages Styles - Matching Reference Image
+   ========================================================================== */
+
+/* Bento Grid */
+.edu-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+@media (max-width: 960px) {
+  .edu-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .edu-bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.edu-card {
+  position: relative;
+  min-height: 280px;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  transition: transform var(--duration-norm) var(--ease-spring);
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Themes matching education.png */
+.edu-card-slate {
+  background: var(--card-edu-gray);
+  color: #ffffff;
+}
+
+.edu-card-blue {
+  background: var(--card-edu-blue);
+  color: #1e293b;
+}
+
+.edu-card-blue .edu-org-title {
+  color: #475569;
+}
+
+.edu-card-blue .edu-card-desc {
+  color: #334155;
+}
+
+.edu-card-blue .edu-cluster-icon {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.edu-card-pink {
+  background: var(--card-edu-pink);
+  color: #581c87;
+}
+
+.edu-card-pink .edu-org-title {
+  color: #7e22ce;
+}
+
+.edu-card-pink .edu-card-desc {
+  color: #6b21a8;
+}
+
+.edu-card-pink .edu-cluster-icon {
+  background: #581c87;
+  color: #ffffff;
+}
+
+/* Photo Cards in Bento */
+.edu-photo-box {
+  padding: 0;
+  min-height: 280px;
+  background: #1e1e24;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.edu-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.15);
+  transition: transform 0.4s, filter 0.4s;
+}
+
+.edu-photo-box:hover img {
+  filter: grayscale(30%) contrast(1.05);
+  transform: scale(1.04);
+}
+
+.edu-photo-motif-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Inner Bento Details */
+.edu-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edu-top-motif {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.edu-org-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cbd5e1;
+}
+
+.edu-card-title {
+  font-family: var(--font-brand);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.edu-card-desc {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.edu-card-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.edu-cluster-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Languages Section Styles matching languages.png */
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  max-width: 850px;
+}
+
+.lang-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.lang-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.lang-bar-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.lang-bar-fill {
+  height: 100%;
+  background: var(--accent-pink);
+  border-radius: var(--radius-pill);
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lang-label {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.lang-score {
+  font-family: var(--font-brand);
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--accent-pink);
+  letter-spacing: -0.04em;
+  min-width: 130px;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .edu-card {
+    padding: 1.75rem 1.5rem;
+    min-height: 240px;
+  }
+  .lang-item {
+    gap: 1.25rem;
+  }
+  .lang-label {
+    font-size: 0.95rem;
+  }
+  .lang-score {
+    font-size: 2.25rem;
+    min-width: 75px;
+  }
+}

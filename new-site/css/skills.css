@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Skills and Tools Section Styles - Exact skills.png Replication
+   ========================================================================== */
+
+.section-skills {
+  background-color: #212124;
+  padding: 7.5rem 0;
+}
+
+/* Header with Ai badge */
+.skills-header-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #111113;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-family: var(--font-brand);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+
+/* 3x2 Grid */
+.skills-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.85rem;
+}
+
+@media (max-width: 1024px) {
+  .skills-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual Gradient Card */
+.skill-gradient-card {
+  position: relative;
+  height: 490px;
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+  transition: transform var(--duration-norm) var(--ease-spring), box-shadow var(--duration-fast);
+  cursor: default;
+}
+
+.skill-gradient-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.45);
+}
+
+/* 1. Sunset Coral / Orange (Top Left in skills.png) */
+.skill-grad-1 {
+  background: linear-gradient(180deg, #992847 0%, #c83b54 25%, #e25448 60%, #eb773c 100%);
+}
+
+/* 2. Mint Seafoam / Jade (Top Middle in skills.png) */
+.skill-grad-2 {
+  background: linear-gradient(180deg, #2b938d 0%, #52b89f 35%, #9fd5bd 75%, #c8e8d8 100%);
+}
+
+/* 3. Slate Mauve / Dusty Coral (Top Right in skills.png) */
+.skill-grad-3 {
+  background: linear-gradient(180deg, #7c8599 0%, #9ba1b4 35%, #b9a9b8 65%, #db867b 100%);
+}
+
+/* 4. Soft Slate / Orchid / Deep Magenta-Pink (Bottom Left in skills.png) */
+.skill-grad-4 {
+  background: linear-gradient(180deg, #cfd3dc 0%, #d8bcc8 35%, #dc82a8 65%, #ce2476 100%);
+}
+
+/* 5. Royal Cobalt / Desert Sand (Bottom Middle in skills.png) */
+.skill-grad-5 {
+  background: linear-gradient(180deg, #2a5298 0%, #466795 35%, #768194 65%, #d6b88b 100%);
+}
+
+/* 6. Royal Iris / Orchid Purple / Lavender (Bottom Right in skills.png) */
+.skill-grad-6 {
+  background: linear-gradient(180deg, #4440aa 0%, #7d59b8 35%, #ba7bc4 65%, #ebb1d4 100%);
+}
+
+/* Top Content: Title + Return Arrow */
+.skill-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.skill-name-title {
+  font-family: var(--font-brand);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.skill-arrow-icon {
+  font-size: 1.35rem;
+  opacity: 0.95;
+  transition: transform var(--duration-fast);
+}
+
+.skill-gradient-card:hover .skill-arrow-icon {
+  transform: rotate(-30deg);
+}
+
+/* Bottom Content: Minimalist White Glyph + Punchy Text */
+.skill-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.skill-glyph-icon {
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.skill-glyph-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-punchline {
+  font-family: var(--font-brand);
+  font-size: clamp(1.15rem, 4vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.32;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 640px) {
+  .skill-gradient-card {
+    height: auto;
+    min-height: 380px;
+    padding: 1.75rem 1.5rem;
+  }
+}

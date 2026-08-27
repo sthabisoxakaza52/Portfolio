@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sthabiso Xakaza | Software Engineer & Cloud Developer</title>
+  <meta name="description" content="Portfolio of Sthabiso Xakaza - Software Engineer specializing in Cloud Infrastructure, AWS, Java Systems and DevOps automation. Based in Cape Town, South Africa.">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/education.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+  <!-- Floating Top Navigation matching ref-imgs -->
+  <nav class="floating-top-nav" aria-label="Main Navigation">
+    <div class="nav-pill-left">
+      <a href="#hero" class="nav-avatar-link" title="Sthabiso Xakaza">
+        <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza" class="nav-avatar-img">
+      </a>
+      <a href="https://www.linkedin.com/in/sthabiso-xakaza-390000353" target="_blank" rel="noopener noreferrer" class="nav-circle-btn" title="LinkedIn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+      </a>
+      <a href="https://www.github.com/sthabisoxakaza52" target="_blank" rel="noopener noreferrer" class="nav-circle-btn" title="GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+      </a>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Open to work</span>
+      </div>
+    </div>
+
+    <div class="nav-pill-right">
+      <a href="cv/Sthabiso_Alondwe_Xakaza_CV (2).pdf" download="Sthabiso_Xakaza_CV.pdf" class="btn-cv-download" id="top-download-cv">
+        <span>Download CV</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Right Floating Vertical Dock matching ref-imgs -->
+  <aside class="floating-vertical-dock" aria-label="Quick Page Navigation">
+    <a href="#hero" class="dock-item active" aria-label="Hero">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span class="dock-tooltip">Home</span>
+    </a>
+    <a href="#experience" class="dock-item" aria-label="Experience">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+      <span class="dock-tooltip">Work Experience</span>
+    </a>
+    <a href="#projects" class="dock-item" aria-label="Selected Work">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+      <span class="dock-tooltip">Selected Projects</span>
+    </a>
+    <a href="#skills" class="dock-item" aria-label="Skills & Tools">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span class="dock-tooltip">Skills and Tools</span>
+    </a>
+    <a href="#education" class="dock-item" aria-label="Education & Awards">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+      <span class="dock-tooltip">Education and awards</span>
+    </a>
+    <a href="#languages" class="dock-item" aria-label="Languages">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span class="dock-tooltip">Languages</span>
+    </a>
+    <a href="#contact" class="dock-item" aria-label="Contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span class="dock-tooltip">Contact</span>
+    </a>
+  </aside>
+
+  <!-- Bottom Floating Audio Equalizer -->
+  <button id="ambient-audio-btn" class="floating-bottom-ctrl audio-muted" title="Play Ambient Sound" aria-label="Toggle Sound">
+    <div class="audio-waves">
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+    </div>
+  </button>
+
+  <div class="page-wrapper">
+    
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section section-hero">
+      <div class="hero-portrait-bg">
+        <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza">
+      </div>
+      <div class="hero-ambient-glow"></div>
+      <div class="content-container">
+        <div class="hero-content">
+          <h1 class="hero-brand-title">Sthabiso</h1>
+          <div class="hero-role-line">
+            <span class="hero-motif-star">❖</span>
+            <h2 class="hero-role-text">Software Engineer | Cloud & DevOps</h2>
+          </div>
+          <div class="hero-location-line">
+            <span>Cape Town, ZA</span>
+            <span>|</span>
+            <button class="hero-email-btn copy-email-btn" title="Click to copy email">sthabisoxakaza52@gmail.com</button>
+          </div>
+          <p class="hero-desc">
+            Software engineering student at <strong>WeThinkCode_ Cape Town</strong> building strong fundamentals in <strong>Java</strong>, <strong>Python</strong>, and distributed systems, with a dedicated focus on <strong>AWS cloud infrastructure</strong>, automation and DevOps.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn-hero-solid">Explore Selected Work ↓</a>
+            <a href="#contact" class="btn-hero-outline">Let's Connect →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Experience Section -->
+    <section id="experience" class="section-experience">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="experience-grid-layout">
+          <!-- Left Connected Timeline Rail -->
+          <div class="exp-timeline-wrapper">
+            <div class="exp-timeline-rail"></div>
+            <div class="exp-roles-list">
+              <button class="exp-role-item active" data-target-card="exp-wtc">
+                <span class="exp-role-dot"></span>
+                <span class="exp-role-title">WeThinkCode_ Fellow</span>
+              </button>
+              <button class="exp-role-item" data-target-card="exp-women">
+                <span class="exp-role-dot"></span>
+                <span class="exp-role-title">WomenThinkCode Member</span>
+              </button>
+              <button class="exp-role-item" data-target-card="exp-cloud">
+                <span class="exp-role-dot"></span>
+                <span class="exp-role-title">Cloud & Systems Builder</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Cards Column -->
+          <div class="exp-cards-container">
+            <div id="exp-wtc" class="exp-card highlighted">
+              <div class="exp-card-header">
+                <span class="exp-card-motif">❖</span>
+                <span class="exp-date-pill">2025 · 2026</span>
+              </div>
+              <h3 class="exp-company-title">WeThinkCode_ Cape Town</h3>
+              <p class="exp-role-subtitle">Software Engineering Fellow</p>
+              <p class="exp-desc">Building strong core engineering fundamentals across OOP systems, multi-threaded socket servers, SQLite databases, and collaborative Agile development.</p>
+              <ul class="exp-list">
+                <li>Engineered concurrent distributed simulation server (Robot Worlds) using Java 17 and TCP multi-client sockets.</li>
+                <li>Applied Test-Driven Development (TDD) using JUnit 5 & Mockito to ensure robust regression testing.</li>
+                <li>Collaborated in Agile/Scrum sprints, executing peer code reviews and CI workflows.</li>
+              </ul>
+              <div class="exp-tags-row">
+                <span class="exp-tag-pill">Java</span><span class="exp-tag-pill">Python</span><span class="exp-tag-pill">TCP Sockets</span><span class="exp-tag-pill">SQLite</span><span class="exp-tag-pill">JUnit 5</span>
+              </div>
+            </div>
+
+            <div id="exp-women" class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-card-motif">❖</span>
+                <span class="exp-date-pill">2025 · Present</span>
+              </div>
+              <h3 class="exp-company-title">WomenThinkCode</h3>
+              <p class="exp-role-subtitle">Active Member</p>
+              <p class="exp-desc">Organizing mini-events, facilitating collaborative peer sessions, and collaborating on technical community initiatives.</p>
+              <ul class="exp-list">
+                <li>Co-hosted community mini-events, technical workshops, and student meetups.</li>
+                <li>Collaborated on technical initiatives and represented women technologists.</li>
+                <li>Fostered an inclusive, supportive environment encouraging women in tech to excel.</li>
+              </ul>
+              <div class="exp-tags-row">
+                <span class="exp-tag-pill">Event Organizing</span><span class="exp-tag-pill">Community Leadership</span><span class="exp-tag-pill">Workshops</span>
+              </div>
+            </div>
+
+            <div id="exp-cloud" class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-card-motif">❖</span>
+                <span class="exp-date-pill">2024 · Present</span>
+              </div>
+              <h3 class="exp-company-title">Independent Engineering</h3>
+              <p class="exp-role-subtitle">Full-Stack & Cloud Architecture</p>
+              <p class="exp-desc">Designing client web solutions and automated cloud infrastructure cost monitoring pipelines.</p>
+              <ul class="exp-list">
+                <li>Built automated AWS budget alert script utilizing Boto3, CloudWatch, and Amazon SNS topics.</li>
+                <li>Engineered responsive e-commerce web platform for Healing Botanicals with Supabase backend.</li>
+                <li>Practiced containerization workflows with Docker and Linux command line tools.</li>
+              </ul>
+              <div class="exp-tags-row">
+                <span class="exp-tag-pill">AWS Boto3</span><span class="exp-tag-pill">Docker</span><span class="exp-tag-pill">JavaScript</span><span class="exp-tag-pill">Supabase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Selected Work Section -->
+    <section id="projects" class="section-projects">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </span>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+
+        <div class="projects-filter-bar" role="tablist">
+          <button class="filter-pill active" data-filter="all">≡ All</button>
+          <button class="filter-pill" data-filter="cloud">Cloud & DevOps</button>
+          <button class="filter-pill" data-filter="java">Java / Systems</button>
+          <button class="filter-pill" data-filter="web">Web / Full-Stack</button>
+          <button class="filter-pill" data-filter="python">Python / CLI</button>
+        </div>
+
+        <div class="projects-poster-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Skills and Tools Section -->
+    <section id="skills" class="section-skills">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </span>
+          <h2 class="section-title">Skills and tools</h2>
+        </div>
+        <div class="skills-bento-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Education & Awards Section -->
+    <section id="education" class="section-education">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </span>
+          <h2 class="section-title">Education & Awards</h2>
+        </div>
+
+        <div class="edu-bento-grid">
+          <div class="edu-card edu-photo-box">
+            <div class="edu-photo-motif-badge">✦</div>
+            <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza">
+          </div>
+
+          <div class="edu-card edu-card-slate">
+            <div class="edu-card-top">
+              <span class="edu-top-motif">❖</span>
+              <span class="edu-org-title">WeThinkCode_ Cape Town &bull; 2026</span>
+            </div>
+            <div class="edu-card-body">
+              <h3 class="edu-card-title">Software Engineering Diploma</h3>
+              <p class="edu-card-desc">Coursework included OOP architecture, data structures, network sockets, SQL database persistence, and TDD.</p>
+            </div>
+            <div class="edu-card-bottom"><div class="edu-cluster-icon">✣</div></div>
+          </div>
+
+          <div class="edu-card edu-card-blue">
+            <div class="edu-card-top">
+              <span class="edu-top-motif">❖</span>
+              <span class="edu-org-title">Industry Certifications &bull; 2025</span>
+            </div>
+            <div class="edu-card-body">
+              <h3 class="edu-card-title" style="color:#1e293b;">Docker & Cloud Program</h3>
+              <p class="edu-card-desc">Docker Level 1 &bull; WeThinkCode_ Gen AI Workshop &bull; AWS Cloud Practitioner & Azure AZ-900 (in progress).</p>
+            </div>
+            <div class="edu-card-bottom"><div class="edu-cluster-icon">✣</div></div>
+          </div>
+
+          <div class="edu-card edu-card-pink">
+            <div class="edu-card-top">
+              <span class="edu-top-motif">❖</span>
+              <span class="edu-org-title">WomenThinkCode &bull; 2025</span>
+            </div>
+            <div class="edu-card-body">
+              <h3 class="edu-card-title">WomenThinkCode Member</h3>
+              <p class="edu-card-desc">Organizing mini-events, facilitating collaborative peer sessions, and collaborating on technical community initiatives.</p>
+            </div>
+            <div class="edu-card-bottom"><div class="edu-cluster-icon">✣</div></div>
+          </div>
+
+          <div class="edu-card edu-photo-box">
+            <div class="edu-photo-motif-badge">❖</div>
+            <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Languages Section -->
+    <section id="languages" class="section-languages">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </span>
+          <h2 class="section-title">Languages & Core Competencies</h2>
+        </div>
+
+        <div class="languages-list">
+          <div class="lang-item">
+            <div class="lang-left">
+              <div class="lang-bar-track"><div class="lang-bar-fill" data-percentage="92%"></div></div>
+              <span class="lang-label">AWS & Cloud Infrastructure (Boto3, SNS, Budgets API)</span>
+            </div>
+            <div class="lang-score">92%</div>
+          </div>
+
+          <div class="lang-item">
+            <div class="lang-left">
+              <div class="lang-bar-track"><div class="lang-bar-fill" data-percentage="88%"></div></div>
+              <span class="lang-label">Java & Object-Oriented System Architecture</span>
+            </div>
+            <div class="lang-score">88%</div>
+          </div>
+
+          <div class="lang-item">
+            <div class="lang-left">
+              <div class="lang-bar-track"><div class="lang-bar-fill" data-percentage="85%"></div></div>
+              <span class="lang-label">Python Scripting & Automation Tools</span>
+            </div>
+            <div class="lang-score">85%</div>
+          </div>
+
+          <div class="lang-item">
+            <div class="lang-left">
+              <div class="lang-bar-track"><div class="lang-bar-fill" data-percentage="80%"></div></div>
+              <span class="lang-label">Docker Containerization & Linux / Bash</span>
+            </div>
+            <div class="lang-score">80%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="section-contact">
+      <div class="content-container">
+        <div class="section-header" style="justify-content: center;">
+          <span class="section-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="contact-layout-wrapper">
+          <div class="contact-talk-poster">
+            <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza" class="contact-talk-photo">
+            <div class="contact-talk-overlay">
+              <div class="contact-talk-title">LET'S<br>TALK</div>
+            </div>
+          </div>
+
+          <div class="contact-email-cta copy-email-btn" title="Click to copy email address">
+            <span class="contact-email-text">STHABISOXAKAZA52@GMAIL.COM</span>
+            <span class="contact-copy-badge">Copy</span>
+          </div>
+
+          <div class="contact-floating-bar">
+            <div class="nav-pill-left">
+              <a href="#hero" class="nav-avatar-link">
+                <img src="my-imgs/Linkedin pic.jpg" alt="Sthabiso Xakaza" class="nav-avatar-img">
+              </a>
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>Open to work</span>
+              </div>
+            </div>
+            <div class="nav-pill-right">
+              <a href="cv/Sthabiso_Alondwe_Xakaza_CV (2).pdf" download="Sthabiso_Xakaza_CV.pdf" class="btn-cv-download">
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="content-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2>Sthabiso</h2>
+            <p class="footer-subtitle">❖ Software Engineer | Cloud & DevOps</p>
+            <p class="footer-meta">Cape Town, South Africa | sthabisoxakaza52@gmail.com</p>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="#hero" class="footer-nav-link"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a></li>
+              <li><a href="#experience" class="footer-nav-link"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Work Experience</a></li>
+              <li><a href="#projects" class="footer-nav-link"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> Selected Projects</a></li>
+              <li><a href="#skills" class="footer-nav-link"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> Skills and Tools</a></li>
+              <li><a href="#education" class="footer-nav-link"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg> Education & awards</a></li>
+              <li><a href="#languages" class="footer-nav-link"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Languages</a></li>
+              <li><a href="#contact" class="footer-nav-link"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Sthabiso Xakaza. All rights reserved.</span>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/sthabiso-xakaza-390000353" target="_blank" rel="noopener noreferrer" class="nav-circle-btn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+            </a>
+            <a href="https://www.github.com/sthabisoxakaza52" target="_blank" rel="noopener noreferrer" class="nav-circle-btn" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <span id="modal-category" class="modal-category-badge"></span>
+        <h3 id="modal-title" class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc" class="modal-desc"></p>
+        <div class="modal-section-heading">Technologies Used</div>
+        <div id="modal-tech" class="modal-tech-tags"></div>
+        <div class="modal-section-heading">Key Highlights & Architecture</div>
+        <ul id="modal-features" class="modal-features-list"></ul>
+      </div>
+      <div id="modal-actions" class="modal-footer"></div>
+    </div>
+  </div>
+
+  <div id="copy-toast" class="copy-toast">Copied to clipboard!</div>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
