@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Contact Section Styles - Matching Reference Image
+   ========================================================================== */
+
+.contact-layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center Photo Poster with LET'S TALK text */
+.contact-talk-poster {
+  width: 100%;
+  max-width: 440px;
+  height: 480px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+  background: #1c1c20;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3.5rem;
+  transition: transform var(--duration-norm) var(--ease-spring);
+}
+
+.contact-talk-poster:hover {
+  transform: scale(1.02);
+}
+
+.contact-talk-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.15);
+  opacity: 0.85;
+}
+
+.contact-talk-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.contact-talk-title {
+  font-family: var(--font-brand);
+  font-size: 5.5rem;
+  font-weight: 900;
+  line-height: 0.82;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  mix-blend-mode: overlay;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Giant Email Typography */
+.contact-email-cta {
+  margin-bottom: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-lg);
+  transition: all var(--duration-fast);
+}
+
+.contact-email-text {
+  font-family: var(--font-brand);
+  font-size: clamp(2rem, 6vw, 4.85rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: all var(--duration-fast);
+}
+
+.contact-email-cta:hover .contact-email-text {
+  color: var(--accent-pink);
+  text-shadow: 0 0 40px rgba(242, 190, 209, 0.4);
+}
+
+.contact-copy-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  transition: all var(--duration-fast);
+}
+
+.contact-email-cta:hover .contact-copy-badge {
+  background: var(--accent-pink);
+  color: var(--text-dark);
+}
+
+/* Bottom Floating Contact Nav Bar matching contact.png */
+.contact-floating-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--accent-pink);
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.75rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: all 0.3s var(--ease-spring);
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 640px) {
+  .contact-talk-poster {
+    height: 380px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2.25rem;
+  }
+  .contact-talk-title {
+    font-size: 4rem;
+  }
+  .contact-email-cta {
+    gap: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .contact-floating-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
